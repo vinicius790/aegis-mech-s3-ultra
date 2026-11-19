@@ -1,0 +1,34 @@
+{
+  "version": "3.0.0",
+  "model_sha256": "7b4c28c491f0b7dbdbb930e735f61b4e1e47076b82b6cb30715365abd97a1f74",
+  "firmware_sha256": "7882fc32f7544e6f1aaa2c99649aa3777553c1e2ecb22bab573e738e935aa653",
+  "se_scale": 0.015625,
+  "s1_shift": 8,
+  "shifts": {
+    "s1": 8,
+    "s_dw": 7,
+    "s_pw": 6,
+    "s3": 7,
+    "s_fc": 8
+  },
+  "input_dim": 120,
+  "classes": [
+    "I_v",
+    "I_h",
+    "O",
+    "L",
+    "V",
+    "Z",
+    "nenhuma"
+  ],
+  "num_params": 4879,
+  "num_params_unfolded": 5023,
+  "ood_params": 13288,
+  "tamper_params": 797,
+  "offsets": {
+    "bootloader": "0x0",
+    "partitions": "0x8000",
+    "boot_app0": "0xe000",
+    "app": "0x10000"
+  }
+}

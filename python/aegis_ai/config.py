@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+"""Global Configuration and Constants for AEGIS-MECH S3 v3.0."""
+
+import math
+
+FW_VERSION = "3.0.0"
+
+# Quantizacao & Escala (Simetrica [-127, 127])
+S_E = 1.0 / 64.0       # Escala de entrada Q1.6 (~0.015625)
+PESO_MAX = 127
+PESO_MIN = -127
+S1_MIN = 1
+S1_MAX = 31
+
+# Restricoes de Memoria TinyML Embarcada (ESP32-S3)
+FLASH_SIZE_LIMIT_BYTES = 32768
+RAM_SIZE_LIMIT_BYTES = 16384
+
+# Geometria da Arena Ativa (mm) & Mecanica do Ferrolho
+ARENA_X_MIN = 120.0
+ARENA_X_MAX = 320.0
+ARENA_Y_MIN = 120.0
+ARENA_Y_MAX = 320.0
+BOLT_COURSE_MM = 28.0
+GEAR_MODULE_MM = 1.25
+PINION_TEETH = 16
+AS5600_MM_PER_DEG = (math.pi * GEAR_MODULE_MM * PINION_TEETH) / 360.0  # ~0.17453 mm/deg
+
+# Protocolo, Seguranca & Timings RTOS
+BAUD_RATE = 921600
+MAX_AGE_MS = 150.0
+INRUSH_BLANKING_MS = 150.0
+ULTRASONIC_TIMEOUT_US = 38000
+ULTRASONIC_AXIS_PERIOD_MS = 60.0
+CYCLE_TIME_MS = 20.0     # 50 Hz Gestual / AI
+ACTUATOR_CYCLE_MS = 10.0 # 100 Hz RT Sensor + Controle
+
+# Contrato de Pinos v3.0 (ESP32-S3-WROOM-1-N16R8)
+PIN_V_MAINS_ADC = 1
+PIN_V_BATT_ADC = 2
+PIN_US_X_TRIG = 4
+PIN_US_X_ECHO = 5
+PIN_US_Y_TRIG = 6
+PIN_US_Y_ECHO = 7
+PIN_I2C_SDA = 8
+PIN_I2C_SCL = 9
+PIN_TOF_X_XSHUT = 10
+PIN_TOF_Y_XSHUT = 11
+PIN_IMU_INT = 12
+PIN_DS18B20_DQ = 13
+PIN_MOTOR_IN1 = 14
+PIN_MOTOR_IN2 = 15
+PIN_SOLENOID_CTRL = 16
+PIN_LIMIT_OPEN = 17
+PIN_LIMIT_CLOSE = 18
+PIN_BTN_MODE = 21
+PIN_WS2812 = 38
+PIN_BUZZER = 39
+PIN_AUX_UART1_TX = 40
+PIN_AUX_UART1_RX = 41
+PIN_ESTOP_SENSE = 42
+PIN_AUX_SERVO = 47
+PIN_ONBOARD_RGB = 48
+
+# Classes de Gestos Reconhecidas
+GESTURE_CLASSES = ["I_v", "I_h", "O", "L", "V", "Z", "nenhuma"]
+NUM_CLASSES = len(GESTURE_CLASSES)
+
+# Tabela Unificada de Codigos de Falha (OLED / Web / ROSA / Serial)
+FAULT_CODES = {
+    0: "E00: NOMINAL",
+    1: "E01: I2C_BUS_FAULT",
+    2: "E02: VOLTAGE_ABNORMAL_CODE_042",
+    3: "E03: MOTOR_STALL_OVERCURRENT",
+    4: "E04: FEEDBACK_MAX_AGE_150MS",
+    5: "E05: TAMPER_ATTACK_LOCKDOWN",
+    6: "E06: SENSOR_DIVERGENCE",
+    7: "E07: POST_OR_OTA_FAIL",
+    8: "E08: HARDWARE_ESTOP_ACTIVE",
+}
+
+# Tolerancia e Gating
+MAHALANOBIS_THRESHOLD_SQ = 6.63  # Chi2 1-DOF a 99%
+NAN_DROPOUT = float("nan")

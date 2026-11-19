@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AEGIS-MECH S3 v3.0 — Web Serial Flasher &amp; Homologacao</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0b1120; color: #e2e8f0; padding: 24px; max-width: 820px; margin: auto; }
+    h1 { color: #38bdf8; margin-bottom: 8px; }
+    .box { background: #131c2e; border: 1px solid #1e293b; border-radius: 8px; padding: 16px; margin: 14px 0; }
+    button { background: #0284c7; color: #fff; border: none; padding: 10px 18px; font-size: 15px; cursor: pointer; border-radius: 6px; font-weight: bold; }
+    button:hover { background: #0369a1; }
+    pre { background: #070a12; border: 1px solid #1e293b; padding: 14px; border-radius: 6px; min-height: 110px; overflow-x: auto; }
+    code { color: #93c5fd; }
+  </style>
+</head>
+<body>
+  <h1>AEGIS-MECH S3 v3.0 — Web Flasher &amp; Verificador SHA-256</h1>
+  <p>Grave bootloader, tabela <code>partitions.bin</code> (16MB QIO+OPI), <code>boot_app0.bin @ 0xe000</code> e <code>firmware.bin</code> pelo navegador Chrome/Edge.</p>
+
+  <div class="box">
+    <strong>Checklist Pre-Flash:</strong>
+    <ul>
+      <li>Drivers USB: ESP32-S3 USB-CDC nativo (VID <code>0x303A</code>) ou ponte UART <code>CP210x</code> (VID <code>0x10C4</code>).</li>
+      <li>Flash Mode: <code>QIO</code> | PSRAM: <code>OPI (qio_opi)</code> | Baud: <code>921600</code>.</li>
+      <li>Selo pós-boot exigido no monitor: <code>POST: 20/20 GOLDEN VECTORS PASS</code>.</li>
+    </ul>
+  </div>
+
+  <button id="connectBtn">Conectar ESP32-S3 &amp; Validar Manifesto</button>
+  <pre id="logArea">Aguardando acao do operador...</pre>
+
+  <script type="module">
+    import { connectAndFlash, validateManifest } from "./esptool.js";
+    const logArea = document.getElementById("logArea");
+    const log = (msg) => { logArea.textContent += "\n" + msg; };
+
+    validateManifest()
+      .then((m) => log(`Manifesto carregado: v${m.version} (${m.builds[0].parts.length} particoes)`))
+      .catch((e) => log("Aviso manifesto: " + e.message));
+
+    document.getElementById("connectBtn").addEventListener("click", async () => {
+      try {
+        await connectAndFlash(log);
+      } catch (err) {
+        log("Falha: " + err.message);
+      }
+    });
+  </script>
+</body>
+</html>

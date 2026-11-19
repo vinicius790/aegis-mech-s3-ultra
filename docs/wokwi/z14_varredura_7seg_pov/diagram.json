@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "author": "AEGIS-MECH v3.0 (Z14 Corrigido em ESP32-S3 - Sem GPIO 12 MTDI Strapping)",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sev1",
+      "top": 20,
+      "left": 220,
+      "attrs": {
+        "digits": "4"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 80,
+      "left": 150,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:4",
+      "r1:1",
+      "green",
+      []
+    ],
+    [
+      "r1:2",
+      "sev1:A",
+      "green",
+      []
+    ],
+    [
+      "esp:18",
+      "sev1:DIG1",
+      "blue",
+      []
+    ]
+  ]
+}

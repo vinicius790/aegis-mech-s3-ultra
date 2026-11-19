@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "AEGIS Engineering v3.0",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-s3-devkitc-1", "id": "esp", "top": 0, "left": 0 },
+    { "type": "wokwi-hc-sr04", "id": "us_x", "top": -140, "left": -120, "attrs": { "distance": "210" } },
+    { "type": "wokwi-hc-sr04", "id": "us_y", "top": -140, "left": 120,  "attrs": { "distance": "240" } },
+    { "type": "wokwi-mpu6050", "id": "imu", "top": 200, "left": -120 },
+    { "type": "board-ssd1306", "id": "oled", "top": 200, "left": 100 },
+    { "type": "wokwi-neopixel", "id": "led", "top": 280, "left": 0 },
+    { "type": "wokwi-resistor", "id": "r_led", "top": 250, "left": -60, "attrs": { "value": "330" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 280, "left": 120 }
+  ],
+  "connections": [
+    [ "esp:4",  "us_x:TRIG", "green", [] ],
+    [ "esp:5",  "us_x:ECHO", "yellow", [] ],
+    [ "esp:6",  "us_y:TRIG", "green", [] ],
+    [ "esp:7",  "us_y:ECHO", "yellow", [] ],
+    [ "esp:8",  "imu:SDA",   "blue",  [] ],
+    [ "esp:9",  "imu:SCL",   "purple", [] ],
+    [ "esp:8",  "oled:SDA",  "blue",  [] ],
+    [ "esp:9",  "oled:SCL",  "purple", [] ],
+    [ "esp:38", "r_led:1",   "orange", [] ],
+    [ "r_led:2", "led:DIN",  "orange", [] ],
+    [ "esp:39", "bz1:2",     "red", [] ]
+  ],
+  "dependencies": {}
+}

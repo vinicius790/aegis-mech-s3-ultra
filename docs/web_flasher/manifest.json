@@ -1,0 +1,24 @@
+{
+  "name": "AEGIS-MECH S3 Firmware",
+  "version": "3.0.0",
+  "chipFamily": "ESP32-S3",
+  "flashMode": "qio",
+  "psramType": "opi",
+  "baudRate": 921600,
+  "expectedPostBanner": "POST: 20/20 GOLDEN VECTORS PASS",
+  "drivers": {
+    "usb_cdc": "Nativo Windows 10/11 / Linux cdc_acm via GPIO19/20",
+    "uart_bridge": "Silicon Labs CP210x Universal Driver (referencia lab-uc-main)"
+  },
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "releases/bootloader.bin", "offset": 0 },
+        { "path": "releases/partitions.bin", "offset": 32768 },
+        { "path": "releases/boot_app0.bin", "offset": 57344 },
+        { "path": "releases/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}

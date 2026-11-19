@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "author": "AEGIS-MECH v3.0 (Z18 + Z10 Corrigido em ESP8266 NodeMCU - 8 LEDs + Psicrometria IoT sem UB)",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-nodemcu-esp8266",
+      "id": "esp8266",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 20,
+      "left": 180,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led8",
+      "top": 20,
+      "left": 320,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 80,
+      "left": 180,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r8",
+      "top": 80,
+      "left": 320,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp8266:D1",
+      "r1:1",
+      "green",
+      []
+    ],
+    [
+      "r1:2",
+      "led1:A",
+      "green",
+      []
+    ],
+    [
+      "esp8266:D2",
+      "r8:1",
+      "red",
+      []
+    ],
+    [
+      "r8:2",
+      "led8:A",
+      "red",
+      []
+    ]
+  ]
+}

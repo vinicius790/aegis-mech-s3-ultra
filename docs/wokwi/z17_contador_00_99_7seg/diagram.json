@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "author": "AEGIS-MECH v3.0 (Z17 + Z05 Corrigido em ESP32-C3 - r2=220 ohm em vez de 0.22 ohm e pinos 0/1 livres)",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-c3-devkitm-1",
+      "id": "c3",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sev_u",
+      "top": 20,
+      "left": 200,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 80,
+      "left": 140,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 110,
+      "left": 140,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "c3:4",
+      "r1:1",
+      "red",
+      []
+    ],
+    [
+      "r1:2",
+      "sev_u:A",
+      "red",
+      []
+    ],
+    [
+      "c3:5",
+      "r2:1",
+      "red",
+      []
+    ],
+    [
+      "r2:2",
+      "sev_u:B",
+      "red",
+      []
+    ]
+  ]
+}

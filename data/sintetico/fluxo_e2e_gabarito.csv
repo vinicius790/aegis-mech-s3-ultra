@@ -1,0 +1,6 @@
+id,forma,sessao,tipo,idx_ini,idx_fim,t_ini_ms,t_fim_ms
+1,I_v,1,forma,0,29,0.0,600.0
+2,nenhuma,1,repouso,30,49,600.0,1000.0
+3,O,1,forma,50,79,1000.0,1600.0
+4,nenhuma,1,repouso,80,99,1600.0,2000.0
+5,L,1,forma,100,129,2000.0,2600.0

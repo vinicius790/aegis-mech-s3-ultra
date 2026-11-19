@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "author": "AEGIS-MECH v3.0 (Z15 Corrigido em ESP32 Classic - Digito 6 0x7D Restaurado + Timeout 38ms + Divisor 3.3V)",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonar1",
+      "top": -100,
+      "left": 180,
+      "attrs": {
+        "distance": "66"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_top",
+      "top": 20,
+      "left": 180,
+      "attrs": {
+        "value": "1200"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_bot",
+      "top": 60,
+      "left": 180,
+      "attrs": {
+        "value": "2200"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:4",
+      "sonar1:TRIG",
+      "green",
+      []
+    ],
+    [
+      "sonar1:ECHO",
+      "r_top:1",
+      "yellow",
+      []
+    ],
+    [
+      "r_top:2",
+      "esp:5",
+      "orange",
+      []
+    ],
+    [
+      "r_top:2",
+      "r_bot:1",
+      "orange",
+      []
+    ],
+    [
+      "r_bot:2",
+      "esp:GND.1",
+      "black",
+      []
+    ]
+  ]
+}

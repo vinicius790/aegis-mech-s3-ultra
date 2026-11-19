@@ -1,0 +1,2692 @@
+{
+  "version": "2.1",
+  "components": [
+    {
+      "id": "breadboard_400-1",
+      "type": "breadboard_400",
+      "value": 0,
+      "unit": "",
+      "position": [
+        0.9,
+        0.015,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": true,
+      "leads": [],
+      "props": {
+        "kind": "400",
+        "slot": 0,
+        "boardColor": "#f4f1ea",
+        "layout": "side"
+      }
+    },
+    {
+      "id": "breadboard_mini-2",
+      "type": "breadboard_mini",
+      "value": 0,
+      "unit": "",
+      "position": [
+        -0.1798,
+        0.015,
+        0.54
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": true,
+      "leads": [],
+      "props": {
+        "kind": "mini",
+        "slot": 0,
+        "boardColor": "#f4f1ea",
+        "layout": "side"
+      }
+    },
+    {
+      "id": "breadboard_mini-3",
+      "type": "breadboard_mini",
+      "value": 0,
+      "unit": "",
+      "position": [
+        0.4425,
+        0.015,
+        0.54
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": true,
+      "leads": [],
+      "props": {
+        "kind": "mini",
+        "slot": 1,
+        "boardColor": "#f4f1ea",
+        "layout": "side"
+      }
+    },
+    {
+      "id": "breadboard_mini-4",
+      "type": "breadboard_mini",
+      "value": 0,
+      "unit": "",
+      "position": [
+        1.0648,
+        0.015,
+        0.54
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": true,
+      "leads": [],
+      "props": {
+        "kind": "mini",
+        "slot": 2,
+        "boardColor": "#f4f1ea",
+        "layout": "side"
+      }
+    },
+    {
+      "id": "switch-245",
+      "type": "switch",
+      "value": 0,
+      "unit": "",
+      "position": [
+        3.4425,
+        0.09,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "A1",
+          "holeId": "g28"
+        },
+        {
+          "name": "A2",
+          "holeId": "g30"
+        },
+        {
+          "name": "B1",
+          "holeId": "d28"
+        },
+        {
+          "name": "B2",
+          "holeId": "d30"
+        }
+      ],
+      "props": {
+        "capColor": "#e63300",
+        "hasCap": true,
+        "isPressed": false,
+        "buttonType": "momentary"
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 1000000000
+      }
+    },
+    {
+      "id": "resistor-250",
+      "type": "resistor",
+      "value": 10000,
+      "unit": "Ω",
+      "position": [
+        3.57,
+        0.351,
+        -0.8925
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "h30"
+        },
+        {
+          "name": "lead2",
+          "holeId": "h29"
+        }
+      ],
+      "props": {
+        "tolerance": "5%",
+        "wattage": 0.25,
+        "bodyColor": "#c9a06b",
+        "burnt": false
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 10000
+      }
+    },
+    {
+      "id": "resistor-301",
+      "type": "resistor",
+      "value": 1200,
+      "unit": "Ω",
+      "position": [
+        -2.9325,
+        0.351,
+        0.8925
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "c3"
+        },
+        {
+          "name": "lead2",
+          "holeId": "c5"
+        }
+      ],
+      "props": {
+        "tolerance": "1%",
+        "wattage": 0.25,
+        "bodyColor": "#3b6ea5",
+        "burnt": false
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 1200
+      }
+    },
+    {
+      "id": "resistor-302",
+      "type": "resistor",
+      "value": 2200,
+      "unit": "Ω",
+      "position": [
+        -2.4225,
+        0.351,
+        1.1475
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "b5"
+        },
+        {
+          "name": "lead2",
+          "holeId": "b7"
+        }
+      ],
+      "props": {
+        "tolerance": "1%",
+        "wattage": 0.25,
+        "bodyColor": "#3b6ea5",
+        "burnt": false
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 2200
+      }
+    },
+    {
+      "id": "thermistor-329",
+      "type": "thermistor",
+      "value": 11441.48,
+      "unit": "Ω",
+      "position": [
+        1.53,
+        0.09,
+        -0.3825
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "f21"
+        },
+        {
+          "name": "lead2",
+          "holeId": "f22"
+        }
+      ],
+      "props": {
+        "beta": 3950,
+        "r25": 10000,
+        "temperature": 22
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 11441.48
+      }
+    },
+    {
+      "id": "resistor-303",
+      "type": "resistor",
+      "value": 10000,
+      "unit": "Ω",
+      "position": [
+        1.785,
+        0.351,
+        -0.6375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "g22"
+        },
+        {
+          "name": "lead2",
+          "holeId": "g23"
+        }
+      ],
+      "props": {
+        "tolerance": "1%",
+        "wattage": 0.25,
+        "bodyColor": "#3b6ea5",
+        "burnt": false
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 10000
+      }
+    },
+    {
+      "id": "potentiometer-246",
+      "type": "potentiometer",
+      "value": 10000,
+      "unit": "Ω",
+      "position": [
+        -0.3825,
+        0.09,
+        -0.3825
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "A",
+          "holeId": "f13"
+        },
+        {
+          "name": "B",
+          "holeId": "f15"
+        },
+        {
+          "name": "W",
+          "holeId": "f14"
+        }
+      ],
+      "props": {
+        "wiper": 0.35,
+        "taper": "B",
+        "variant": "rotary"
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 10000
+      }
+    },
+    {
+      "id": "tmp36-247",
+      "type": "tmp36",
+      "value": 0,
+      "unit": "°C",
+      "position": [
+        0.6375,
+        0.09,
+        -0.3825
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "vcc",
+          "holeId": "f17"
+        },
+        {
+          "name": "vout",
+          "holeId": "f18"
+        },
+        {
+          "name": "gnd",
+          "holeId": "f19"
+        }
+      ],
+      "props": {
+        "temperature": 22
+      },
+      "spiceModel": {
+        "type": "V",
+        "modelName": "TMP36"
+      }
+    },
+    {
+      "id": "ldr-248",
+      "type": "ldr",
+      "value": 9237.756,
+      "unit": "Ω",
+      "position": [
+        2.55,
+        0.09,
+        -0.3825
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "f25"
+        },
+        {
+          "name": "lead2",
+          "holeId": "f26"
+        }
+      ],
+      "props": {},
+      "spiceModel": {
+        "type": "R",
+        "value": 9237.756
+      }
+    },
+    {
+      "id": "resistor-249",
+      "type": "resistor",
+      "value": 10000,
+      "unit": "Ω",
+      "position": [
+        2.805,
+        0.351,
+        -0.6375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "g26"
+        },
+        {
+          "name": "lead2",
+          "holeId": "g27"
+        }
+      ],
+      "props": {
+        "tolerance": "5%",
+        "wattage": 0.25,
+        "bodyColor": "#c9a06b",
+        "burnt": false
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 10000
+      }
+    },
+    {
+      "id": "shiftregister-101",
+      "type": "shiftregister",
+      "value": 0,
+      "unit": "",
+      "position": [
+        6.705,
+        0.09,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "QB",
+          "holeId": "bb1:e3"
+        },
+        {
+          "name": "QC",
+          "holeId": "bb1:e4"
+        },
+        {
+          "name": "QD",
+          "holeId": "bb1:e5"
+        },
+        {
+          "name": "QE",
+          "holeId": "bb1:e6"
+        },
+        {
+          "name": "QF",
+          "holeId": "bb1:e7"
+        },
+        {
+          "name": "QG",
+          "holeId": "bb1:e8"
+        },
+        {
+          "name": "QH",
+          "holeId": "bb1:e9"
+        },
+        {
+          "name": "GND",
+          "holeId": "bb1:e10"
+        },
+        {
+          "name": "VCC",
+          "holeId": "bb1:f3"
+        },
+        {
+          "name": "QA",
+          "holeId": "bb1:f4"
+        },
+        {
+          "name": "SER",
+          "holeId": "bb1:f5"
+        },
+        {
+          "name": "OE",
+          "holeId": "bb1:f6"
+        },
+        {
+          "name": "RCLK",
+          "holeId": "bb1:f7"
+        },
+        {
+          "name": "SRCLK",
+          "holeId": "bb1:f8"
+        },
+        {
+          "name": "SRCLR",
+          "holeId": "bb1:f9"
+        },
+        {
+          "name": "QHS",
+          "holeId": "bb1:f10"
+        }
+      ],
+      "props": {},
+      "spiceModel": {
+        "type": "X",
+        "modelName": "74HC595"
+      }
+    },
+    {
+      "id": "ledbar-102",
+      "type": "ledbar",
+      "value": 0,
+      "unit": "",
+      "position": [
+        9.255,
+        0.09,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "A1",
+          "holeId": "bb1:f12"
+        },
+        {
+          "name": "A2",
+          "holeId": "bb1:f13"
+        },
+        {
+          "name": "A3",
+          "holeId": "bb1:f14"
+        },
+        {
+          "name": "A4",
+          "holeId": "bb1:f15"
+        },
+        {
+          "name": "A5",
+          "holeId": "bb1:f16"
+        },
+        {
+          "name": "A6",
+          "holeId": "bb1:f17"
+        },
+        {
+          "name": "A7",
+          "holeId": "bb1:f18"
+        },
+        {
+          "name": "A8",
+          "holeId": "bb1:f19"
+        },
+        {
+          "name": "A9",
+          "holeId": "bb1:f20"
+        },
+        {
+          "name": "A10",
+          "holeId": "bb1:f21"
+        },
+        {
+          "name": "K1",
+          "holeId": "bb1:e12"
+        },
+        {
+          "name": "K2",
+          "holeId": "bb1:e13"
+        },
+        {
+          "name": "K3",
+          "holeId": "bb1:e14"
+        },
+        {
+          "name": "K4",
+          "holeId": "bb1:e15"
+        },
+        {
+          "name": "K5",
+          "holeId": "bb1:e16"
+        },
+        {
+          "name": "K6",
+          "holeId": "bb1:e17"
+        },
+        {
+          "name": "K7",
+          "holeId": "bb1:e18"
+        },
+        {
+          "name": "K8",
+          "holeId": "bb1:e19"
+        },
+        {
+          "name": "K9",
+          "holeId": "bb1:e20"
+        },
+        {
+          "name": "K10",
+          "holeId": "bb1:e21"
+        }
+      ],
+      "props": {
+        "barColor": "#00d4ff",
+        "count": 10,
+        "pattern": null
+      },
+      "spiceModel": {
+        "type": "D",
+        "modelName": "LED"
+      }
+    },
+    {
+      "id": "buzzer-272",
+      "type": "buzzer",
+      "value": 42,
+      "unit": "Ω",
+      "position": [
+        11.04,
+        0.09,
+        1.1475
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "negative",
+          "holeId": "bb1:b24"
+        },
+        {
+          "name": "positive",
+          "holeId": "bb1:b23"
+        }
+      ],
+      "props": {
+        "frequency": 2300,
+        "voltage": 5
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 42
+      }
+    },
+    {
+      "id": "resistor-270",
+      "type": "resistor",
+      "value": 220,
+      "unit": "Ω",
+      "position": [
+        11.6775,
+        0.351,
+        0.0
+      ],
+      "rotation": [
+        0,
+        1.5707963267948961,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "bb1:d26"
+        },
+        {
+          "name": "lead2",
+          "holeId": "bb1:f26"
+        }
+      ],
+      "props": {
+        "bodyColor": "#3b6ea5",
+        "burnt": false,
+        "tolerance": "5%",
+        "wattage": 0.25
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 220
+      }
+    },
+    {
+      "id": "led-269",
+      "type": "led",
+      "value": 2,
+      "unit": "V",
+      "position": [
+        11.6775,
+        0.09,
+        1.987
+      ],
+      "rotation": [
+        0,
+        -4.712388980384686,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "anode",
+          "holeId": "bb1:a26"
+        },
+        {
+          "name": "cathode",
+          "holeId": "bb1:-pwr-bot-26"
+        }
+      ],
+      "props": {
+        "burnt": false,
+        "clearBody": false,
+        "forwardVoltage": 2,
+        "ledColor": "#00ff55",
+        "maxIntensity": 1,
+        "shape": "round",
+        "size": 5
+      },
+      "spiceModel": {
+        "type": "D",
+        "modelName": "LED"
+      }
+    },
+    {
+      "id": "resistor-285",
+      "type": "resistor",
+      "value": 220,
+      "unit": "Ω",
+      "position": [
+        12.1875,
+        0.351,
+        0.0
+      ],
+      "rotation": [
+        0,
+        1.5707963267948961,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "bb1:d28"
+        },
+        {
+          "name": "lead2",
+          "holeId": "bb1:f28"
+        }
+      ],
+      "props": {
+        "bodyColor": "#3b6ea5",
+        "burnt": false,
+        "tolerance": "5%",
+        "wattage": 0.25
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 220
+      }
+    },
+    {
+      "id": "led-284",
+      "type": "led",
+      "value": 2,
+      "unit": "V",
+      "position": [
+        12.1875,
+        0.09,
+        1.987
+      ],
+      "rotation": [
+        0,
+        -4.712388980384686,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "anode",
+          "holeId": "bb1:a28"
+        },
+        {
+          "name": "cathode",
+          "holeId": "bb1:-pwr-bot-28"
+        }
+      ],
+      "props": {
+        "burnt": false,
+        "clearBody": false,
+        "forwardVoltage": 2,
+        "ledColor": "#ffcc00",
+        "maxIntensity": 1,
+        "shape": "round",
+        "size": 5
+      },
+      "spiceModel": {
+        "type": "D",
+        "modelName": "LED"
+      }
+    },
+    {
+      "id": "resistor-282",
+      "type": "resistor",
+      "value": 220,
+      "unit": "Ω",
+      "position": [
+        12.6975,
+        0.351,
+        0.0
+      ],
+      "rotation": [
+        0,
+        1.5707963267948961,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "bb1:d30"
+        },
+        {
+          "name": "lead2",
+          "holeId": "bb1:f30"
+        }
+      ],
+      "props": {
+        "bodyColor": "#3b6ea5",
+        "burnt": false,
+        "tolerance": "5%",
+        "wattage": 0.25
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 220
+      }
+    },
+    {
+      "id": "led-283",
+      "type": "led",
+      "value": 2,
+      "unit": "V",
+      "position": [
+        12.6975,
+        0.09,
+        1.987
+      ],
+      "rotation": [
+        0,
+        -4.712388980384686,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "anode",
+          "holeId": "bb1:a30"
+        },
+        {
+          "name": "cathode",
+          "holeId": "bb1:-pwr-bot-30"
+        }
+      ],
+      "props": {
+        "burnt": false,
+        "clearBody": false,
+        "forwardVoltage": 2,
+        "ledColor": "#ff2200",
+        "maxIntensity": 1,
+        "shape": "round",
+        "size": 5
+      },
+      "spiceModel": {
+        "type": "D",
+        "modelName": "LED"
+      }
+    },
+    {
+      "id": "dht-103",
+      "type": "dht",
+      "value": 3.3,
+      "unit": "V",
+      "position": [
+        -3.073,
+        0.09,
+        4.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "VCC",
+          "holeId": "mn1:h3"
+        },
+        {
+          "name": "DATA",
+          "holeId": "mn1:h4"
+        },
+        {
+          "name": "GND",
+          "holeId": "mn1:h5"
+        }
+      ],
+      "props": {
+        "variant": "DHT11"
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "DHT11"
+      }
+    },
+    {
+      "id": "reflect-106",
+      "type": "reflect",
+      "value": 3.3,
+      "unit": "V",
+      "position": [
+        -1.4155,
+        0.09,
+        4.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "VCC",
+          "holeId": "mn1:h9"
+        },
+        {
+          "name": "AOUT",
+          "holeId": "mn1:h10"
+        },
+        {
+          "name": "DOUT",
+          "holeId": "mn1:h11"
+        },
+        {
+          "name": "GND",
+          "holeId": "mn1:h12"
+        }
+      ],
+      "props": {
+        "threshold": 0.45,
+        "activeHigh": true
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "TCRT5000"
+      }
+    },
+    {
+      "id": "fsr-107",
+      "type": "fsr",
+      "value": 2000,
+      "unit": "Ω",
+      "position": [
+        -0.3955,
+        0.09,
+        6.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "mn1:c14"
+        },
+        {
+          "name": "lead2",
+          "holeId": "mn1:c15"
+        }
+      ],
+      "props": {
+        "force": 5
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 2000
+      }
+    },
+    {
+      "id": "resistor-fsr-111",
+      "type": "resistor",
+      "value": 10000,
+      "unit": "Ω",
+      "position": [
+        -0.1405,
+        0.351,
+        5.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "lead1",
+          "holeId": "mn1:d15"
+        },
+        {
+          "name": "lead2",
+          "holeId": "mn1:d16"
+        }
+      ],
+      "props": {
+        "tolerance": "5%",
+        "wattage": 0.25,
+        "bodyColor": "#c9a06b",
+        "burnt": false
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 10000
+      }
+    },
+    {
+      "id": "lcd-104",
+      "type": "lcd",
+      "value": 5,
+      "unit": "V",
+      "position": [
+        3.2775,
+        0.09,
+        4.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "GND",
+          "holeId": "mn2:h3"
+        },
+        {
+          "name": "VCC",
+          "holeId": "mn2:h4"
+        },
+        {
+          "name": "SDA",
+          "holeId": "mn2:h5"
+        },
+        {
+          "name": "SCL",
+          "holeId": "mn2:h6"
+        }
+      ],
+      "props": {
+        "size": "16x2",
+        "lcdColor": "blue",
+        "address": 39,
+        "contrast": 1
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "LCD"
+      }
+    },
+    {
+      "id": "tm1637-105",
+      "type": "tm1637",
+      "value": 5,
+      "unit": "V",
+      "position": [
+        9.2455,
+        0.09,
+        4.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "CLK",
+          "holeId": "mn3:h2"
+        },
+        {
+          "name": "DIO",
+          "holeId": "mn3:h3"
+        },
+        {
+          "name": "VCC",
+          "holeId": "mn3:h4"
+        },
+        {
+          "name": "GND",
+          "holeId": "mn3:h5"
+        }
+      ],
+      "props": {
+        "segColor": "#ff2a1a",
+        "colon": true,
+        "dots": false
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "TM1637"
+      }
+    },
+    {
+      "id": "voltage_regulator-109",
+      "type": "voltage_regulator",
+      "value": 3.3,
+      "unit": "V",
+      "position": [
+        10.903,
+        0.09,
+        4.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "IN",
+          "holeId": "mn3:h9"
+        },
+        {
+          "name": "GND",
+          "holeId": "mn3:h10"
+        },
+        {
+          "name": "OUT",
+          "holeId": "mn3:h11"
+        }
+      ],
+      "props": {
+        "model": "AMS1117"
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "AMS1117"
+      }
+    },
+    {
+      "id": "capacitor-110",
+      "type": "capacitor",
+      "value": 100,
+      "unit": "µF",
+      "position": [
+        11.0305,
+        0.09,
+        5.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "positive",
+          "holeId": "mn3:f11"
+        },
+        {
+          "name": "negative",
+          "holeId": "mn3:f10"
+        }
+      ],
+      "props": {
+        "capType": "electrolytic",
+        "polarized": true,
+        "voltage": 25
+      },
+      "spiceModel": {
+        "type": "C",
+        "value": 0.0001
+      }
+    },
+    {
+      "id": "mosfet-320",
+      "type": "mosfet",
+      "value": 0,
+      "unit": "",
+      "position": [
+        11.923,
+        0.09,
+        6.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "GATE",
+          "holeId": "mn3:c13"
+        },
+        {
+          "name": "DRAIN",
+          "holeId": "mn3:c14"
+        },
+        {
+          "name": "SOURCE",
+          "holeId": "mn3:c15"
+        }
+      ],
+      "props": {
+        "channel": "N",
+        "model": "IRLZ44N"
+      },
+      "spiceModel": {
+        "type": "M",
+        "modelName": "IRLZ44N"
+      }
+    },
+    {
+      "id": "diode-330",
+      "type": "diode",
+      "value": 1,
+      "unit": "V",
+      "position": [
+        12.178,
+        0.351,
+        6.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "anode",
+          "holeId": "mn3:b14"
+        },
+        {
+          "name": "cathode",
+          "holeId": "mn3:b16"
+        }
+      ],
+      "props": {
+        "model": "1N4001"
+      },
+      "spiceModel": {
+        "type": "D",
+        "modelName": "1N4001"
+      }
+    },
+    {
+      "id": "ultrasonic-317",
+      "type": "ultrasonic",
+      "value": 5,
+      "unit": "V",
+      "position": [
+        6.0,
+        0.09,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "ECHO",
+          "holeId": null
+        },
+        {
+          "name": "GND",
+          "holeId": null
+        },
+        {
+          "name": "TRIG",
+          "holeId": null
+        },
+        {
+          "name": "VCC",
+          "holeId": null
+        }
+      ],
+      "props": {
+        "auto": false,
+        "distanceCm": 18
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "HCSR04"
+      }
+    },
+    {
+      "id": "mpu6050-318",
+      "type": "mpu6050",
+      "value": 104,
+      "unit": "",
+      "position": [
+        9.1,
+        0.09,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "VCC",
+          "holeId": null
+        },
+        {
+          "name": "GND",
+          "holeId": null
+        },
+        {
+          "name": "SCL",
+          "holeId": null
+        },
+        {
+          "name": "SDA",
+          "holeId": null
+        },
+        {
+          "name": "XDA",
+          "holeId": null
+        },
+        {
+          "name": "XCL",
+          "holeId": null
+        },
+        {
+          "name": "AD0",
+          "holeId": null
+        },
+        {
+          "name": "INT",
+          "holeId": null
+        }
+      ],
+      "props": {
+        "pitch": 0,
+        "roll": 0
+      },
+      "spiceModel": null
+    },
+    {
+      "id": "oled-325",
+      "type": "oled",
+      "value": 3.3,
+      "unit": "V",
+      "position": [
+        12.1,
+        0.09,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "GND",
+          "holeId": null
+        },
+        {
+          "name": "VCC",
+          "holeId": null
+        },
+        {
+          "name": "SCL",
+          "holeId": null
+        },
+        {
+          "name": "SDA",
+          "holeId": null
+        }
+      ],
+      "props": {
+        "address": 60,
+        "oledColor": "white"
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "SSD1306"
+      }
+    },
+    {
+      "id": "servo-35",
+      "type": "servo",
+      "value": 5,
+      "unit": "V",
+      "position": [
+        -2.3,
+        0.09,
+        9.4
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "VCC",
+          "holeId": null
+        },
+        {
+          "name": "GND",
+          "holeId": null
+        },
+        {
+          "name": "SIG",
+          "holeId": null
+        }
+      ],
+      "props": {
+        "angle": 0
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 625,
+        "params": {
+          "description": "SG90 servo (idle draw)"
+        }
+      }
+    },
+    {
+      "id": "neopixel-331",
+      "type": "neopixel",
+      "value": 5,
+      "unit": "V",
+      "position": [
+        4.4,
+        0.09,
+        9.4
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "GND",
+          "holeId": null
+        },
+        {
+          "name": "VCC",
+          "holeId": null
+        },
+        {
+          "name": "DIN",
+          "holeId": null
+        },
+        {
+          "name": "DOUT",
+          "holeId": null
+        }
+      ],
+      "props": {
+        "count": 8,
+        "form": "stick",
+        "wiring": "serpentine"
+      },
+      "spiceModel": {
+        "type": "X",
+        "modelName": "WS2812B"
+      }
+    },
+    {
+      "id": "relay-108",
+      "type": "relay",
+      "value": 5,
+      "unit": "V",
+      "position": [
+        9.1,
+        0.09,
+        9.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "VCC",
+          "holeId": null
+        },
+        {
+          "name": "GND",
+          "holeId": null
+        },
+        {
+          "name": "SIG",
+          "holeId": null
+        },
+        {
+          "name": "NC",
+          "holeId": null
+        },
+        {
+          "name": "COM",
+          "holeId": null
+        },
+        {
+          "name": "NO",
+          "holeId": null
+        }
+      ],
+      "props": {},
+      "spiceModel": {
+        "type": "X",
+        "modelName": "RELAY_1CH"
+      }
+    },
+    {
+      "id": "motor-323",
+      "type": "motor",
+      "value": 3,
+      "unit": "V",
+      "position": [
+        12.2,
+        0.09,
+        9.4
+      ],
+      "rotation": [
+        0,
+        4.71238898038469,
+        0
+      ],
+      "locked": false,
+      "leads": [
+        {
+          "name": "VCC",
+          "holeId": null
+        },
+        {
+          "name": "GND",
+          "holeId": null
+        }
+      ],
+      "props": {
+        "rpm": 200,
+        "voltage": 3
+      },
+      "spiceModel": {
+        "type": "R",
+        "value": 10,
+        "params": {
+          "description": "DC Motor (simplified)"
+        }
+      }
+    }
+  ],
+  "jumpers": [
+    {
+      "id": "jumper-pwr-3v3-main",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "mcu-10",
+      "endHoleId": "+pwr-top-9",
+      "locked": false
+    },
+    {
+      "id": "jumper-pwr-gnd-top-main",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "mcu-1",
+      "endHoleId": "-pwr-top-1",
+      "locked": false
+    },
+    {
+      "id": "jumper-pwr-gnd-bridge-main",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-top-30",
+      "endHoleId": "-pwr-bot-30",
+      "locked": false
+    },
+    {
+      "id": "jumper-pwr-5v-bot-main",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "mcu-2",
+      "endHoleId": "+pwr-bot-1",
+      "locked": false
+    },
+    {
+      "id": "jumper-bridge-bb1-3v3-top",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-top-30",
+      "endHoleId": "bb1:+pwr-top-1",
+      "locked": false
+    },
+    {
+      "id": "jumper-bridge-bb1-gnd-top",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-top-26",
+      "endHoleId": "bb1:-pwr-top-1",
+      "locked": false
+    },
+    {
+      "id": "jumper-bridge-bb1-5v-bot",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-bot-30",
+      "endHoleId": "bb1:+pwr-bot-1",
+      "locked": false
+    },
+    {
+      "id": "jumper-bridge-bb1-gnd-bot",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-bot-29",
+      "endHoleId": "bb1:-pwr-bot-1",
+      "locked": false
+    },
+    {
+      "id": "jumper-btn-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-top-28",
+      "endHoleId": "j28",
+      "locked": false
+    },
+    {
+      "id": "jumper-btn-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "j29",
+      "endHoleId": "-pwr-top-29",
+      "locked": false
+    },
+    {
+      "id": "jumper-btn-sig",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "mcu-27",
+      "endHoleId": "j30",
+      "locked": false
+    },
+    {
+      "id": "jumper-ult-div-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "a7",
+      "endHoleId": "-pwr-bot-7",
+      "locked": false
+    },
+    {
+      "id": "jumper-ult-echo-mcu",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "e5",
+      "endHoleId": "mcu-5",
+      "locked": false
+    },
+    {
+      "id": "jumper-ntc-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-top-21",
+      "endHoleId": "j21",
+      "locked": false
+    },
+    {
+      "id": "jumper-ntc-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-top-23",
+      "endHoleId": "j23",
+      "locked": false
+    },
+    {
+      "id": "jumper-ntc-sig",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mcu-31",
+      "endHoleId": "j22",
+      "locked": false
+    },
+    {
+      "id": "jumper-pot-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "j13",
+      "endHoleId": "-pwr-top-13",
+      "locked": false
+    },
+    {
+      "id": "jumper-pot-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-top-15",
+      "endHoleId": "j15",
+      "locked": false
+    },
+    {
+      "id": "jumper-pot-sig",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mcu-22",
+      "endHoleId": "j14",
+      "locked": false
+    },
+    {
+      "id": "jumper-tmp-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-top-17",
+      "endHoleId": "j17",
+      "locked": false
+    },
+    {
+      "id": "jumper-tmp-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-top-19",
+      "endHoleId": "j19",
+      "locked": false
+    },
+    {
+      "id": "jumper-tmp-sig",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mcu-26",
+      "endHoleId": "j18",
+      "locked": false
+    },
+    {
+      "id": "jumper-ldr-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-top-25",
+      "endHoleId": "j25",
+      "locked": false
+    },
+    {
+      "id": "jumper-ldr-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-top-27",
+      "endHoleId": "j27",
+      "locked": false
+    },
+    {
+      "id": "jumper-ldr-sig",
+      "color": "#ffee00",
+      "endStyle": "precut",
+      "startHoleId": "mcu-30",
+      "endHoleId": "i26",
+      "locked": false
+    },
+    {
+      "id": "jumper-i2c-hub-scl",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mcu-8",
+      "endHoleId": "bb1:f1",
+      "locked": false
+    },
+    {
+      "id": "jumper-i2c-hub-sda",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mcu-9",
+      "endHoleId": "bb1:e1",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "bb1:+pwr-top-3",
+      "endHoleId": "bb1:j3",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-oe-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:-pwr-top-6",
+      "endHoleId": "bb1:j6",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-srclr-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "bb1:+pwr-top-9",
+      "endHoleId": "bb1:j9",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a10",
+      "endHoleId": "bb1:-pwr-bot-10",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-ser-mcu",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "mcu-25",
+      "endHoleId": "bb1:j5",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-rclk-mcu",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mcu-23",
+      "endHoleId": "bb1:j7",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-srclk-mcu",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mcu-24",
+      "endHoleId": "bb1:j8",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qa-bar1",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:j4",
+      "endHoleId": "bb1:j12",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qb-bar2",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c3",
+      "endHoleId": "bb1:j13",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qc-bar3",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c4",
+      "endHoleId": "bb1:j14",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qd-bar4",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c5",
+      "endHoleId": "bb1:j15",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qe-bar5",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c6",
+      "endHoleId": "bb1:j16",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qf-bar6",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c7",
+      "endHoleId": "bb1:j17",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qg-bar7",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c8",
+      "endHoleId": "bb1:j18",
+      "locked": false
+    },
+    {
+      "id": "jumper-sr-qh-bar8",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c9",
+      "endHoleId": "bb1:j19",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k1-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a12",
+      "endHoleId": "bb1:-pwr-bot-12",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k2-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a13",
+      "endHoleId": "bb1:-pwr-bot-13",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k3-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a14",
+      "endHoleId": "bb1:-pwr-bot-14",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k4-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a15",
+      "endHoleId": "bb1:-pwr-bot-15",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k5-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a16",
+      "endHoleId": "bb1:-pwr-bot-16",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k6-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a17",
+      "endHoleId": "bb1:-pwr-bot-17",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k7-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a18",
+      "endHoleId": "bb1:-pwr-bot-18",
+      "locked": false
+    },
+    {
+      "id": "jumper-bar-k8-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a19",
+      "endHoleId": "bb1:-pwr-bot-19",
+      "locked": false
+    },
+    {
+      "id": "jumper-buz-sig",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "mcu-11",
+      "endHoleId": "bb1:e23",
+      "locked": false
+    },
+    {
+      "id": "jumper-buz-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:a24",
+      "endHoleId": "bb1:-pwr-bot-24",
+      "locked": false
+    },
+    {
+      "id": "jumper-led-ok",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mcu-18",
+      "endHoleId": "bb1:j26",
+      "locked": false
+    },
+    {
+      "id": "jumper-led-yellow",
+      "color": "#ffee00",
+      "endStyle": "precut",
+      "startHoleId": "mcu-15",
+      "endHoleId": "bb1:j28",
+      "locked": false
+    },
+    {
+      "id": "jumper-led-err",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "mcu-19",
+      "endHoleId": "bb1:j30",
+      "locked": false
+    },
+    {
+      "id": "jumper-dht-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-bot-2",
+      "endHoleId": "mn1:j3",
+      "locked": false
+    },
+    {
+      "id": "jumper-dht-data",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mcu-12",
+      "endHoleId": "mn1:j4",
+      "locked": false
+    },
+    {
+      "id": "jumper-dht-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-bot-4",
+      "endHoleId": "mn1:j5",
+      "locked": false
+    },
+    {
+      "id": "jumper-tcrt-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-bot-8",
+      "endHoleId": "mn1:j9",
+      "locked": false
+    },
+    {
+      "id": "jumper-tcrt-dout",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mcu-17",
+      "endHoleId": "mn1:j11",
+      "locked": false
+    },
+    {
+      "id": "jumper-tcrt-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-bot-11",
+      "endHoleId": "mn1:j12",
+      "locked": false
+    },
+    {
+      "id": "jumper-fsr-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-bot-13",
+      "endHoleId": "mn1:e14",
+      "locked": false
+    },
+    {
+      "id": "jumper-fsr-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-bot-15",
+      "endHoleId": "mn1:e16",
+      "locked": false
+    },
+    {
+      "id": "jumper-lcd-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "-pwr-bot-27",
+      "endHoleId": "mn2:j3",
+      "locked": false
+    },
+    {
+      "id": "jumper-lcd-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "+pwr-bot-28",
+      "endHoleId": "mn2:j4",
+      "locked": false
+    },
+    {
+      "id": "jumper-lcd-sda",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "bb1:c1",
+      "endHoleId": "mn2:j5",
+      "locked": false
+    },
+    {
+      "id": "jumper-lcd-scl",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "bb1:h1",
+      "endHoleId": "mn2:j6",
+      "locked": false
+    },
+    {
+      "id": "jumper-tm-clk",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mcu-29",
+      "endHoleId": "mn3:j2",
+      "locked": false
+    },
+    {
+      "id": "jumper-tm-dio",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mcu-28",
+      "endHoleId": "mn3:j3",
+      "locked": false
+    },
+    {
+      "id": "jumper-tm-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "bb1:+pwr-bot-17",
+      "endHoleId": "mn3:j4",
+      "locked": false
+    },
+    {
+      "id": "jumper-tm-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:-pwr-bot-18",
+      "endHoleId": "mn3:j5",
+      "locked": false
+    },
+    {
+      "id": "jumper-ldo-in-5v",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "bb1:+pwr-bot-22",
+      "endHoleId": "mn3:j9",
+      "locked": false
+    },
+    {
+      "id": "jumper-ldo-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:-pwr-bot-23",
+      "endHoleId": "mn3:j10",
+      "locked": false
+    },
+    {
+      "id": "jumper-mos-gate",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "mcu-16",
+      "endHoleId": "mn3:e13",
+      "locked": false
+    },
+    {
+      "id": "jumper-mos-src-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "bb1:-pwr-bot-28",
+      "endHoleId": "mn3:a15",
+      "locked": false
+    },
+    {
+      "id": "jumper-flyback-5v",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "bb1:+pwr-bot-29",
+      "endHoleId": "mn3:a16",
+      "locked": false
+    },
+    {
+      "id": "jumper-ult-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "ultrasonic-317-VCC",
+      "endHoleId": "bb1:+pwr-top-4",
+      "locked": false
+    },
+    {
+      "id": "jumper-ult-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "ultrasonic-317-GND",
+      "endHoleId": "bb1:-pwr-top-4",
+      "locked": false
+    },
+    {
+      "id": "jumper-ult-trig",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "ultrasonic-317-TRIG",
+      "endHoleId": "mcu-4",
+      "locked": false
+    },
+    {
+      "id": "jumper-ult-echo-in",
+      "color": "#ffee00",
+      "endStyle": "precut",
+      "startHoleId": "ultrasonic-317-ECHO",
+      "endHoleId": "e3",
+      "locked": false
+    },
+    {
+      "id": "jumper-imu-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "mpu6050-318-VCC",
+      "endHoleId": "bb1:+pwr-top-16",
+      "locked": false
+    },
+    {
+      "id": "jumper-imu-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "mpu6050-318-GND",
+      "endHoleId": "bb1:-pwr-top-16",
+      "locked": false
+    },
+    {
+      "id": "jumper-imu-scl",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "mpu6050-318-SCL",
+      "endHoleId": "bb1:i1",
+      "locked": false
+    },
+    {
+      "id": "jumper-imu-sda",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "mpu6050-318-SDA",
+      "endHoleId": "bb1:b1",
+      "locked": false
+    },
+    {
+      "id": "jumper-oled-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "oled-325-VCC",
+      "endHoleId": "bb1:+pwr-top-28",
+      "locked": false
+    },
+    {
+      "id": "jumper-oled-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "oled-325-GND",
+      "endHoleId": "bb1:-pwr-top-28",
+      "locked": false
+    },
+    {
+      "id": "jumper-oled-scl",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "oled-325-SCL",
+      "endHoleId": "bb1:j1",
+      "locked": false
+    },
+    {
+      "id": "jumper-oled-sda",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "oled-325-SDA",
+      "endHoleId": "bb1:a1",
+      "locked": false
+    },
+    {
+      "id": "jumper-srv-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "servo-35-VCC",
+      "endHoleId": "+pwr-bot-6",
+      "locked": false
+    },
+    {
+      "id": "jumper-srv-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "servo-35-GND",
+      "endHoleId": "-pwr-bot-6",
+      "locked": false
+    },
+    {
+      "id": "jumper-srv-sig",
+      "color": "#ffee00",
+      "endStyle": "precut",
+      "startHoleId": "servo-35-SIG",
+      "endHoleId": "mcu-6",
+      "locked": false
+    },
+    {
+      "id": "jumper-np-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "neopixel-331-VCC",
+      "endHoleId": "+pwr-bot-29",
+      "locked": false
+    },
+    {
+      "id": "jumper-np-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "neopixel-331-GND",
+      "endHoleId": "-pwr-bot-29",
+      "locked": false
+    },
+    {
+      "id": "jumper-np-din",
+      "color": "#ff9900",
+      "endStyle": "precut",
+      "startHoleId": "neopixel-331-DIN",
+      "endHoleId": "mcu-14",
+      "locked": false
+    },
+    {
+      "id": "jumper-rel-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "relay-108-VCC",
+      "endHoleId": "bb1:+pwr-bot-16",
+      "locked": false
+    },
+    {
+      "id": "jumper-rel-gnd",
+      "color": "#111111",
+      "endStyle": "precut",
+      "startHoleId": "relay-108-GND",
+      "endHoleId": "bb1:-pwr-bot-16",
+      "locked": false
+    },
+    {
+      "id": "jumper-rel-sig",
+      "color": "#33cc33",
+      "endStyle": "precut",
+      "startHoleId": "relay-108-SIG",
+      "endHoleId": "mcu-3",
+      "locked": false
+    },
+    {
+      "id": "jumper-mot-vcc",
+      "color": "#e63300",
+      "endStyle": "precut",
+      "startHoleId": "motor-323-VCC",
+      "endHoleId": "mn3:e16",
+      "locked": false
+    },
+    {
+      "id": "jumper-mot-drain",
+      "color": "#0088ff",
+      "endStyle": "precut",
+      "startHoleId": "motor-323-GND",
+      "endHoleId": "mn3:e14",
+      "locked": false
+    }
+  ],
+  "gpio": {
+    "A0": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "A1": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "A2": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "A3": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "A4": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": "down"
+    },
+    "A5": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "A6": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "A7": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "A8": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "A11": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "A12": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "A15": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B0": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B1": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "B3": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B4": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "B5": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B6": {
+      "enabled": true,
+      "mode": "HIGH",
+      "direction": "output",
+      "pull": null
+    },
+    "B7": {
+      "enabled": true,
+      "mode": "HIGH",
+      "direction": "output",
+      "pull": null
+    },
+    "B8": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B12": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B13": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    },
+    "B14": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "input",
+      "pull": null
+    },
+    "B15": {
+      "enabled": true,
+      "mode": "LOW",
+      "direction": "output",
+      "pull": null
+    }
+  },
+  "python": "# AEGIS-MECH S3 v3.0 Ultra - Bancada 3D Multi-Protoboard (5 Protoboards, 7 Zonas, 20 Repos .zip)\n# Arquiteturas Integradas: ESP32-S3 + STM32F411CE + ESP32-C3 + ESP32 + ESP8266 + Arduino Uno/Mega\n# - Zona 1 (Main 400): Botao A4, Divisor HC-SR04 B4, NTC 10k B3950 A0, Pot ToF B1, TMP36 A5, LDR A1\n# - Zona 2 (Extra 400 bb1): 74HC595 (A6/A7/B0) + LED Bar 10-seg, Buzzer Silencioso (A12), Semaforo FSM (B13/A8/B12)\n# - Zona 3 (Mini 1 mn1): DHT11 Digital (A11), TCRT5000 IR Line/Prox (B14), Force Sensor FSR 402\n# - Zona 4 (Mini 2 mn2): Character LCD 16x2 I2C (0x27) dedicado sem sobreposicao\n# - Zona 5 (Mini 3 mn3): Display 4-Digitos TM1637 (A2/A3) + Regulador AMS1117-3.3 + Cap 100uF + MOSFET IRLZ44N (B15)\n# - Zona 6/7 (Baias Externas): HC-SR04 (B3/B4), MPU6050 (I2C), OLED 0.96\" (I2C), Servo SG90 (B5),\n#                              NeoPixel 8x (B8), Rele Fail-Secure (A15), Motor DC / Solenoide\n\nfrom machine import Pin, ADC, PWM, I2C\nfrom time import sleep_ms\nimport math\n\n# 1. Mapeamento Completo das 24 Portas GPIO/ADC/PWM/I2C\nbtn_trig   = Pin('A4', Pin.IN, Pin.PULL_DOWN)  # mcu-27: Botao Trigger / Auth Toggle (Main col 1..3)\ntrig_pin   = Pin('B3', Pin.OUT)                # mcu-4 : HC-SR04 TRIG (Baia Traseira)\necho_pin   = Pin('B4', Pin.IN)                 # mcu-5 : HC-SR04 ECHO 3.23V (Main col 6..10)\npot_tof    = ADC(Pin('B1'))                    # mcu-22: Trajetoria ToF (Main col 17..21)\nats_tmp36  = ADC(Pin('A5'))                    # mcu-26: Bulbo Seco TMP36 (Main col 23..25)\nntc_adc    = ADC(Pin('A0'))                    # mcu-31: Termistor NTC 10k B3950 (Main col 11..15)\nldr_2fa    = ADC(Pin('A1'))                    # mcu-30: Luminancia Optica 2FA (Main col 27..30)\ntcrt_dout  = Pin('B14', Pin.IN)                # mcu-17: Sensor Optico TCRT5000 DOUT (Mini 1 col 11)\ndht_pin    = Pin('A11', Pin.IN)                # mcu-12: Sensor Digital DHT11 DATA (Mini 1 col 4)\n\n# Registrador de Deslocamento 74HC595 -> LED Bar 10-Segmentos (Extra 400 bb1)\nsr_ser     = Pin('A6', Pin.OUT)                # mcu-25: 74HC595 SER (bb1:f5)\nsr_clk     = Pin('A7', Pin.OUT)                # mcu-24: 74HC595 SRCLK (bb1:f8)\nsr_latch   = Pin('B0', Pin.OUT)                # mcu-23: 74HC595 RCLK (bb1:f7)\n\n# Atuadores PWM & Fail-Secure Lock\nservo_pwm  = PWM(Pin('B5'))                    # mcu-6 : Servo SG90 Trava S-Curve (50 Hz)\nservo_pwm.freq(50)\nmosfet_pwm = PWM(Pin('B15'))                   # mcu-16: Gate MOSFET IRLZ44N (Mini 3 col 13)\nmosfet_pwm.freq(1000)\nrelay_pin  = Pin('A15', Pin.OUT)               # mcu-3 : Modulo Rele SPDT Fail-Secure\nrelay_pin.value(0)\n\n# Sinalizacao Semafaro FSM (Z20) + Buzzer 100% Silencioso em Regime\nbuz_pin    = Pin('A12', Pin.OUT)               # mcu-11: Buzzer Piezo (bb1:col 23..24 - SILENCIOSO!)\nbuz_pin.value(0)\nled_green  = Pin('B13', Pin.OUT)               # mcu-18: LED Verde (bb1:col 26)\nled_yellow = Pin('A8', Pin.OUT)                # mcu-15: LED Amarelo (bb1:col 28)\nled_red    = Pin('B12', Pin.OUT)               # mcu-19: LED Vermelho (bb1:col 30)\n\n# Barramento I2C Compartilhado (B6=SCL, B7=SDA -> OLED 0x3C + LCD 16x2 0x27 + MPU6050 0x68)\ni2c = None\noled = None\nlcd = None\ntry:\n    i2c = I2C(0, scl=Pin('B6'), sda=Pin('B7'))\n    import ssd1306\n    oled = ssd1306.SSD1306_I2C(128, 64, i2c)\nexcept Exception:\n    oled = None\n\ntry:\n    if 'I2cLcd' in globals() and i2c is not None:\n        lcd = I2cLcd(i2c, 0x27, 2, 16)\nexcept Exception:\n    lcd = None\n\n# Display 4 Digitos 7-Segmentos TM1637 (Mini 3 col 2..5 -> CLK=A2, DIO=A3)\ntm = None\ntry:\n    if 'TM1637' in globals():\n        tm = TM1637(clk=Pin('A2'), dio=Pin('A3'))\n    else:\n        import tm1637\n        tm = tm1637.TM1637(clk=Pin('A2'), dio=Pin('A3'))\nexcept Exception:\n    tm = None\n\n# Barra Enderecavel WS2812B NeoPixel (8 LEDs em B8 / mcu-14)\nnp = None\ntry:\n    import neopixel\n    np = neopixel.NeoPixel(Pin('B8', Pin.OUT), 8)\nexcept Exception:\n    np = None\n\ndef shift_out_74hc595(byte_val):\n    sr_latch.value(0)\n    for bit in range(7, -1, -1):\n        sr_clk.value(0)\n        sr_ser.value((byte_val >> bit) & 1)\n        sr_clk.value(1)\n    sr_clk.value(0)\n    sr_latch.value(1)\n\ndef read_ntc_celsius(adc_u16):\n    clamped = max(16, min(65519, adc_u16))\n    r_ntc = 10000.0 * (clamped / float(65535 - clamped))\n    inv_t = (1.0 / 298.15) + (1.0 / 3950.0) * math.log(r_ntc / 10000.0)\n    return max(-55.0, min(150.0, (1.0 / inv_t) - 273.15))\n\ndef compute_psychrometry_and_sound(ts_c, tm_c):\n    es_s = 6.1078 * (10.0 ** ((7.5 * ts_c) / (ts_c + 237.3)))\n    es_m = 6.1078 * (10.0 ** ((7.5 * tm_c) / (tm_c + 237.3)))\n    ea = max(0.5, es_m - 0.668 * max(0.0, ts_c - tm_c))\n    rh = max(5.0, min(100.0, (ea / max(es_s, 0.1)) * 100.0))\n    xw = ea / 1013.25\n    c_mps = 331.3 * math.sqrt(1.0 + (ts_c / 273.15)) * (1.0 + 0.16 * xw)\n    return rh, c_mps\n\n# Filtro de Kalman 1D na Forma de Joseph (auto-inicializado no 1o frame)\nk_init = False\nk_x = 152.0\nk_v = 0.0\nk_p00 = 16.0\nk_p11 = 10.0\nQ_POS = 1.5\nR_MEAS = 25.0\n\ndef kalman_joseph_step(z_mm, dt_s):\n    global k_init, k_x, k_v, k_p00, k_p11\n    if not k_init:\n        k_x = z_mm\n        k_v = 0.0\n        k_init = True\n        return k_x, k_v, 0.0, False\n    x_pred = k_x + k_v * dt_s\n    p00_pred = k_p00 + dt_s * dt_s * k_p11 + Q_POS\n    innov = z_mm - x_pred\n    s_cov = p00_pred + R_MEAS\n    maha_d = math.sqrt((innov * innov) / s_cov)\n    if maha_d > 4.5:\n        k_x = x_pred + 0.25 * innov\n        k_p00 = p00_pred + R_MEAS\n        return k_x, k_v, maha_d, True\n    gain = p00_pred / s_cov\n    one_m_k = 1.0 - gain\n    k_x = x_pred + gain * innov\n    k_v = 0.7 * k_v + 0.3 * (innov / max(dt_s, 0.05))\n    k_p00 = (one_m_k * one_m_k) * p00_pred + (gain * gain) * R_MEAS\n    return k_x, k_v, maha_d, False\n\ndef scurve_quintic(tau):\n    if tau <= 0.0:\n        return 0.0\n    if tau >= 1.0:\n        return 1.0\n    t2 = tau * tau\n    t3 = t2 * tau\n    return t3 * (10.0 - 15.0 * tau + 6.0 * t2)\n\ndef write_servo_deg(deg):\n    duty = int((0.05 + (deg / 180.0) * 0.05) * 65535)\n    servo_pwm.duty_u16(duty)\n\ndef update_displays(temp_c, rh_pct, c_air, dist_mm, seq_str, cos_sim, level_0_8, unlocked, fault):\n    # 1. 74HC595 -> LED Bar 10-Segmentos (mascara thermometer bargraph)\n    mask = (1 << level_0_8) - 1\n    shift_out_74hc595(mask)\n\n    # 2. NeoPixel WS2812B 8x\n    if np is not None:\n        try:\n            for idx in range(8):\n                if fault:\n                    np[idx] = (180, 0, 0)\n                elif unlocked:\n                    np[idx] = (0, 170, 45) if idx < level_0_8 else (0, 25, 10)\n                else:\n                    np[idx] = (0, 80, 180) if idx < level_0_8 else (8, 12, 24)\n            np.write()\n        except Exception:\n            pass\n\n    # 3. TM1637 4-Digit 7-Segment Display (distancia Kalman em mm)\n    if tm is not None:\n        try:\n            tm.number(int(round(dist_mm)))\n        except Exception:\n            pass\n\n    # 4. Character LCD 16x2 I2C (0x27)\n    if lcd is not None:\n        try:\n            lcd.move_to(0, 0)\n            l1 = ('AEGIS ' + ('OPEN-90' if unlocked else 'SCAN-OK') + '   ')[:16]\n            lcd.putstr(l1)\n            lcd.move_to(0, 1)\n            l2 = ('d=' + str(int(round(dist_mm))) + 'mm ' + seq_str + '        ')[:16]\n            lcd.putstr(l2)\n        except Exception:\n            pass\n\n    # 5. OLED SSD1306 128x64 I2C (0x3C)\n    if oled is not None:\n        try:\n            oled.fill(0)\n            oled.text('AEGIS-MECH S3 v3', 0, 0)\n            oled.text(str(round(temp_c, 1)) + 'C RH:' + str(int(rh_pct)) + '% ' + str(int(c_air)) + 'm/s', 0, 13)\n            oled.text('Kalman:' + str(round(dist_mm, 1)) + 'mm', 0, 26)\n            oled.text('Seq:' + seq_str + ' B:' + str(round(cos_sim, 2)), 0, 39)\n            oled.text('ST:' + ('FAULT!' if fault else ('OPEN-90' if unlocked else 'SCAN-OK')), 0, 52)\n            oled.show()\n        except Exception:\n            pass\n\nGESTURE_PASS = ['I_v', 'O', 'L']\nWAVE_OFFSETS = [-55.0, -45.0, 0.0, 10.0, 95.0, 105.0, 0.0, 0.0]\nseq_idx = 0\nunlocked = False\nhold_open_ticks = 0\nscurve_step = 0\nprev_btn = 0\nlast_line = ''\ntick = 0\n\nwrite_servo_deg(0)\nmosfet_pwm.duty_u16(0)\nrelay_pin.value(0)\nbuz_pin.value(0)\nled_green.value(0)\nled_yellow.value(1)\nled_red.value(0)\nshift_out_74hc595(0)\n\nprint('=== AEGIS-MECH S3 v3.0 ULTRA | 5-BREADBOARD 7-ZONE MULTI-MCU TWIN READY ===')\n\nwhile True:\n    v_tmp = (ats_tmp36.read_u16() / 65535.0) * 3.3\n    ts_c = (v_tmp - 0.5) * 100.0\n    ntc_c = read_ntc_celsius(ntc_adc.read_u16())\n    tm_c = min(ts_c, 0.7 * ts_c + 0.3 * ntc_c - 1.8)\n    rh_pct, c_air = compute_psychrometry_and_sound(ts_c, tm_c)\n\n    trig_pin.value(1)\n    trig_pin.value(0)\n    base_mm = 40.0 + (pot_tof.read_u16() / 65535.0) * 260.0\n    wave_mm = WAVE_OFFSETS[(tick // 4) % len(WAVE_OFFSETS)]\n    raw_mm = max(55.0, min(340.0, base_mm + wave_mm))\n    lux_pct = round((ldr_2fa.read_u16() / 65535.0) * 100.0)\n    line_ok = tcrt_dout.value()\n\n    dist_mm, vel_mms, maha_d, outlier = kalman_joseph_step(raw_mm, 0.12)\n\n    if dist_mm < 130.0:\n        pred_cls = 'I_v'\n    elif dist_mm < 215.0:\n        pred_cls = 'O'\n    else:\n        pred_cls = 'L'\n\n    bio_cos_sim = 0.93 if lux_pct >= 10 else 0.64\n    fault_active = (ts_c > 65.0) or (ts_c < -15.0)\n\n    # Botao manual A4 (unico evento que emite bip curto de 25ms)\n    now_btn = btn_trig.value()\n    if now_btn == 1 and prev_btn == 0:\n        unlocked = not unlocked\n        hold_open_ticks = 25 if unlocked else 0\n        buz_pin.value(1)\n        sleep_ms(25)\n        buz_pin.value(0)\n    prev_btn = now_btn\n\n    # Buzzer mantido 100% SILENCIOSO (LOW) em todo o regime continuo\n    buz_pin.value(0)\n\n    if (not fault_active) and (not unlocked) and (bio_cos_sim >= 0.75):\n        if pred_cls == GESTURE_PASS[seq_idx]:\n            seq_idx += 1\n            if seq_idx >= 3:\n                unlocked = True\n                hold_open_ticks = 18\n                seq_idx = 0\n\n    if unlocked and hold_open_ticks > 0:\n        hold_open_ticks -= 1\n        if hold_open_ticks == 0:\n            unlocked = False\n\n    if fault_active:\n        unlocked = False\n        write_servo_deg(0)\n        mosfet_pwm.duty_u16(0)\n        relay_pin.value(0)\n        led_green.value(0)\n        led_yellow.value(0)\n        led_red.value(1)\n        angle_deg = 0\n    elif unlocked:\n        scurve_step = min(8, scurve_step + 1)\n        s_val = scurve_quintic(scurve_step / 8.0)\n        angle_deg = int(round(90.0 * s_val))\n        write_servo_deg(angle_deg)\n        pwm_duty = int((0.85 if scurve_step < 4 else 0.35) * 65535)\n        mosfet_pwm.duty_u16(pwm_duty)\n        relay_pin.value(1)\n        led_green.value(1)\n        led_yellow.value(0)\n        led_red.value(0)\n    else:\n        scurve_step = max(0, scurve_step - 1)\n        s_val = scurve_quintic(scurve_step / 8.0)\n        angle_deg = int(round(90.0 * s_val))\n        write_servo_deg(angle_deg)\n        mosfet_pwm.duty_u16(0)\n        relay_pin.value(0)\n        led_green.value(0)\n        led_yellow.value(1)\n        led_red.value(0)\n\n    bar_lvl = min(8, max(1, int(round((dist_mm / 340.0) * 8.0))))\n    seq_str = '>'.join(GESTURE_PASS[:seq_idx]) if seq_idx > 0 else (\n        'I_v>O>L' if unlocked else 'READY'\n    )\n    update_displays(ts_c, rh_pct, c_air, dist_mm, seq_str, bio_cos_sim, bar_lvl, unlocked, fault_active)\n\n    line = (\n        'AEGIS | T=' + str(round(ts_c, 1)) + 'C RH=' + str(int(rh_pct)) + '% c=' + str(round(c_air, 1)) + 'm/s'\n        + ' | d=' + str(round(dist_mm, 1)) + 'mm (' + pred_cls + ')'\n        + ' | seq=' + seq_str\n        + ' | cos=' + str(round(bio_cos_sim, 2))\n        + ' | srv=' + str(angle_deg) + 'deg'\n        + ' | st=' + ('UNLOCKED' if unlocked else 'SCANNING_OK')\n    )\n    if line != last_line:\n        last_line = line\n        print(line)\n\n    tick += 1\n    sleep_ms(120)",
+  "notes": "# AEGIS-MECH S3 v3.0 Ultra — Bancada 3D Multi-Protoboard (5 Protoboards · 7 Zonas · 40 Componentes · 99 Jumpers)\n- **Zona 1 (Protoboard Principal 400 pts)**: Botao Trigger `A4` + Pull-down `10k`, Divisor HC-SR04 `1.2k/2.2k` (`B4`), Termistor `NTC 10k B3950` + Divisor `10k` (`A0`), Potenciometro ToF (`B1`), `TMP36` Bulbo Seco (`A5`), `LDR` 2FA + Divisor `10k` (`A1`).\n- **Zona 2 (Protoboard Extra 400 pts `bb1:`)**: Hub I2C (`col 1`), Registrador `74HC595` (`A6/A7/B0`) acionando `LED Bar 10-Segmentos`, `Buzzer Piezo` 100% silencioso em regime (`A12`), Semaforo FSM 3 LEDs (`Verde B13`, `Amarelo A8`, `Vermelho B12`) + 3x `220Ω`.\n- **Zona 3 (Mini Protoboard 1 `mn1:`)**: `DHT11` Digital (`A11`), Sensor Optico `TCRT5000` (`B14`), Sensor de Forca `FSR 402` + Divisor `10k`.\n- **Zona 4 (Mini Protoboard 2 `mn2:`)**: `Character LCD 16x2 I2C` (`0x27`) dedicado sem sobreposicao.\n- **Zona 5 (Mini Protoboard 3 `mn3:`)**: Display 4-Digitos 7-Segmentos `TM1637` (`CLK=A2, DIO=A3`) + Regulador LDO `AMS1117-3.3` + Capacitor `100µF` + Power Stage MOSFET `IRLZ44N` (`B15`) + Diodo Flyback `1N4001`.\n- **Zonas 6 & 7 (Baias Perimetrais Externas sem Sobreposicao)**: `HC-SR04` (`B3/B4`), `MPU6050` (`I2C`), `0.96\" OLED SSD1306` (`I2C`), `Servo SG90` (`B5`), `WS2812B NeoPixel 8x` (`B8`), `Modulo Rele SPDT` (`A15`), `Motor DC / Solenoide`.",
+  "workspace": {
+    "dockOpen": false,
+    "blocksW": 460,
+    "codeView": true,
+    "codeLang": "py",
+    "consoleOpen": true,
+    "notesOpen": false,
+    "slowMode": false,
+    "highlightEnabled": true,
+    "scope": {
+      "open": false,
+      "mode": "gpio",
+      "channels": [
+        "B5",
+        "B15",
+        "B1",
+        "A5"
+      ],
+      "timebase": 2000,
+      "xy": false
+    },
+    "display": {
+      "tog-grid": true,
+      "tog-shadows": true,
+      "tog-perf": false,
+      "tog-labels": true,
+      "tog-lockhl": false,
+      "tog-autosnap": false,
+      "tog-autosim": false,
+      "tog-nodeids": false,
+      "tog-pininfo": true,
+      "tog-forcemanual": false
+    },
+    "sections": [
+      "view-section"
+    ],
+    "font": "share",
+    "vcc": "0",
+    "theme": "light",
+    "autoRun": true,
+    "boardColor": "#f4f1ea",
+    "extraLayout": "side",
+    "jumperStyle": "precut",
+    "view": {
+      "pos": [
+        3.5,
+        25.0,
+        13.5
+      ],
+      "target": [
+        3.2,
+        -0.5,
+        2.2
+      ]
+    },
+    "env": {
+      "light": 65,
+      "temp": 24,
+      "humidity": 45
+    },
+    "settings": {
+      "hdr": "/hdr/studio_small_01_1k.hdr",
+      "casing": true,
+      "snap": 0.4
+    }
+  },
+  "multi_mcu_catalog": [
+    {
+      "family": "ESP32-S3 (Dual-Core Xtensa LX7 + Vector PIE)",
+      "board_id": "board-esp32-s3-devkitc-1 / UNDA.Xplora UI",
+      "role": "Controlador Principal TinyML INT8 + Biometria Cosseno 16-D + BLE HID + ESP-NOW",
+      "firmware": "firmware/src/main.cpp & firmware/arduino_aegis_s3_all_in_one/arduino_aegis_s3_all_in_one.ino"
+    },
+    {
+      "family": "STM32F411CE (ARM Cortex-M4F 100 MHz)",
+      "board_id": "UNDA.Xplora 32-Pin Header (A0..A15 / B0..B15)",
+      "role": "Co-Processador de Tempo Real da Bancada 3D Xplora3D (24 GPIOs + I2C + PWM S-Curve + 74HC595)",
+      "firmware": "docs/xplora3d/aegis_mech_s3_v3.x3d (MicroPython Engine)"
+    },
+    {
+      "family": "ESP32-C3 (RISC-V Single-Core 160 MHz BLE 5.0)",
+      "board_id": "board-esp32-c3-devkitm-1",
+      "role": "Varinha Inercial Vestivel BLE HID Air Mouse + Calibracao Giroscopica 500 Amostras (Z05)",
+      "firmware": "firmware/tools/comet_air_mouse_wand_c3/comet_air_mouse_wand_c3.ino"
+    },
+    {
+      "family": "ESP32 Classic (Dual-Core Xtensa LX6 Wi-Fi/BT)",
+      "board_id": "board-esp32-devkit-c-v4",
+      "role": "Gateway de Telemetria Ultrasonica HC-SR04 + Termistor NTC 10k + Ponte Serial (Z04/Z15/Z16)",
+      "firmware": "docs/wokwi/z15_regua_eletronica_hcsr04/sketch.ino"
+    },
+    {
+      "family": "ESP8266 (NodeMCU ESP-12E Tensilica L106 Wi-Fi)",
+      "board_id": "board-nodemcu-esp8266",
+      "role": "No IoT de Psicrometria Bulbo Seco/Umido Magnus-Tetens & Logica de 8 LEDs (Z10/Z18)",
+      "firmware": "docs/wokwi/z18_logica_leds_8x/sketch.ino"
+    },
+    {
+      "family": "Arduino Uno R3 (ATmega328P 16 MHz)",
+      "board_id": "wokwi-arduino-uno",
+      "role": "Controlador Didatico 74HC595 + 7-Seg POV + Semaforo FSM + 16 Licoes Learn-Arduino (Z13/Z14/Z17..Z20)",
+      "firmware": "docs/wokwi/z13_placar_digital_74hc595/sketch.ino"
+    },
+    {
+      "family": "Arduino Mega 2560 (ATmega2560 16 MHz 54 GPIOs)",
+      "board_id": "wokwi-arduino-mega",
+      "role": "Controlador Robotico 5x Sensores IR TCRT5000 PID + Portal Bidirecional Duplo Sonar (Z03/Z12/Z16)",
+      "firmware": "docs/wokwi/z16_sistema_entrada_bidirecional/sketch.ino"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+posicao,forma_esperada,timeout_ms
+1,I_v,3000
+2,O,3000
+3,L,3000

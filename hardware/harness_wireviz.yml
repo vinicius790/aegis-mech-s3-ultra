@@ -1,0 +1,58 @@
+connectors:
+  J_PWR_IN:
+    type: Screw Terminal 2P 5.08mm
+    pinlabels: [+12V_IN, PGND_IN]
+  J_UPS_BATT:
+    type: XT30 / JST-VH 2P
+    pinlabels: [+7V4_BMS, PGND_BATT]
+  SW_ESTOP_BLK:
+    type: NC Mushroom Switch 22mm (Faston 4.8mm)
+    pinlabels: [VM_IN, VM_SW_OUT]
+  J_MOTOR:
+    type: JST-VH 2P
+    pinlabels: [M1_A, M1_B]
+  J_SOL:
+    type: JST-XH 2P
+    pinlabels: [+12V_VM_SW, SOL_DRAIN]
+    notes: "1N5819 em antiparalelo direto nos terminais da bobina SOL1"
+  J_PCB_ARENA:
+    type: JST-XH 10P
+    pinlabels: [+5V_SNS, +3V3_SNS, AGND, USX_TRG, USX_ECH5, USY_TRG, USY_ECH5, I2C_SDA, I2C_SCL, TOF_XSHUT_X]
+    notes: "Troncos 22AWG; emendas p/ HC-SR04 escalonadas >=30mm c/ termo-retratil adesivo"
+  J_LIMIT_SW:
+    type: JST-XH 4P
+    pinlabels: [SW_OPEN, AGND_SW1, SW_CLOSE, AGND_SW2]
+  J_PANEL_HMI:
+    type: JST-XH 6P
+    pinlabels: [+5V_LED, PGND_LED, LED_DIN, +3V3_OLED, AGND_OLED, BTN_MODE]
+
+cables:
+  W_PWR_TRUNK:
+    gauge: 18 AWG
+    length: 0.35
+    colors: [RD, BK]
+  W_ESTOP_LOOP:
+    gauge: 18 AWG
+    length: 0.25
+    colors: [RD, OG]
+  W_ACTUATORS:
+    gauge: 20 AWG
+    length: 0.25
+    colors: [YE, BU, WH, BN]
+  W_ARENA_BUS:
+    gauge: 22 AWG
+    length: 0.30
+    shield: true
+    colors: [RD, OG, BK, GN, BU, YE, VT, GY, WH, PK]
+  W_HMI_SWITCHES:
+    gauge: 24 AWG
+    length: 0.25
+    colors: [RD, BK, GN, OG, GY, WH]
+
+connections:
+  - [J_PWR_IN: [1, 2], W_PWR_TRUNK: [1, 2]]
+  - [SW_ESTOP_BLK: [1, 2], W_ESTOP_LOOP: [1, 2]]
+  - [J_MOTOR: [1, 2], W_ACTUATORS: [1, 2]]
+  - [J_SOL: [1, 2], W_ACTUATORS: [3, 4]]
+  - [J_PCB_ARENA: [1-10], W_ARENA_BUS: [1-10]]
+  - [J_LIMIT_SW: [1-4], W_HMI_SWITCHES: [1, 2, 3, 4]]

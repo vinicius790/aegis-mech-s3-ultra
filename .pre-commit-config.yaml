@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.6
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  - repo: local
+    hooks:
+      - id: circuit-netlist-auditor
+        name: Audit Hardware & Wokwi Netlists
+        entry: py demo/circuit_netlist_auditor.py --netlist hardware/kicad/aegis_mech_s3_netlist.json --strict
+        language: system
+        pass_filenames: false
+      - id: pytest-check
+        name: pytest suite
+        entry: py -m pytest tests/ -v
+        language: system
+        types: [python]
+        pass_filenames: false

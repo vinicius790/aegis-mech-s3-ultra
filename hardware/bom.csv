@@ -1,0 +1,32 @@
+ID,Subsistema,Componente,Qtd,Especificacao,Nivel,Substituto
+U1,Processamento,ESP32-S3-WROOM-1-N16R8,1,Dual LX7 240MHz 16MB QIO Flash 8MB OPI PSRAM (41 pins),N1,ESP32-S3-DevKitC-1-N16R8
+U2_U3,Sensores Laser,VL53L1X (GY-530),2,ToF Laser 940nm I2C 3.3V c/ XSHUT (0x30/0x31),N1,VL53L0X
+U4_U5,Sensores Acusticos,HC-SR04,2,Ultrassonico 40kHz 5V c/ divisor 1.2k/2.2k no ECHO (3.235V),N1,HC-SR04P 3.3V
+U6,Temperatura,DS18B20,1,1-Wire digital TO-92 +-0.5C + pull-up 4.7k (+2o opcional umido),N2,NTC 10k B3950
+U7,IMU Seguranca,MPU6050 (GY-521),1,6-DOF Accel+-8G Gyro+-500dps I2C 0x68 @ 100Hz,N2,ICM-20689
+U8,Encoder Angular,AS5600 + Ima Diametral,1,Magnetico 12-bit I2C 0x36 + ima NdFeB Ø6x2.5mm @ 1.5mm gap,N1,KY-024 + Microswitch
+U9,Monitor Energia,INA219AIDR + Shunt 0.1R 2W,1,Shunt 0.100 ohm 1% 2512 Kelvin 4-fios I2C 0x40 Cal=4096,N2,INA226
+U10,Driver Motor,DRV8871DDAR,1,Ponte-H 6.5-45V R_ILIM=30k 1% -> 2.133A (L298N/TB6612 banidos),N1,DRV8874
+M1,Atuador Linear,Motoredutor DC 12V 100RPM,1,Eixo D-6mm engrenagem metalica torque 3 kgf.cm,N1,Motoredutor JGY370 12V
+SOL1,Interlock,Mini Solenoide 12V 10mm,1,Curso 10mm 0.7A mola retorno fail-secure,N2,Atuador servo trava
+Q1,Drive Solenoide,IRLZ44N,1,MOSFET N Logic-Level TO-220 + R_G=100R + PD=10k + Zener 12V gate,N2,IRL540N
+ISO1_ISO2,Isolamento Opto,PC817B,2,ISO1 (SOL1 via 330R) e ISO2 (E-Stop Sense -> GPIO42),N2,LTV-817 / 4N35
+D1,Protecao Indutiva,1N5819,1,Diodo Schottky 1A 40V flyback direto nos terminais de SOL1,N1,SS34 / 1N5822
+D2a_D2b,ATS OR-ing,SS54,2,Diodo Schottky 5A 40V SMC OR-ing Fonte 12V vs Bateria 2S,N1,MBR540
+F1_TVS1,Entrada DCDB,Fusivel/PPTC 5A + SMBJ15A,1,Protecao contra sobrecorrente 5A e surto transiente 15V,N1,Porta-fusivel lamina 5A + 1.5KE15A
+SW_ESTOP,Seguranca Hardwired,Cogumelo NF Vermelho Ø22mm 10A,1,Corta fisicamente +12V_VM_SW + retorno isolado GPIO42,N1,Chave emergencia NF 22mm
+U11,Regulador Buck 5V,MP1584EN + L1 4.7uH + SS34,1,fsw=850kHz R_FREQ=100k C_BST=100nF FB=52.3k/10k Kelvin,N1,LM2596-5.0
+U12,Regulador LDO 3.3V,TLV1117-33IDCYR,1,5.0V -> 3.30V / 1A SOT-223 c/ caps 10uF IN / 22uF+100nF OUT,N1,AMS1117-3.3
+PWR1,UPS Nobreak,2x 18650 + BMS 2S 10A + TP5100,1,Bateria 7.4V nominal / 8.4V cheia + carga 12V->8.4V,N2,Fonte 12V 5A isolada
+DISP1,Interface Local,OLED SSD1306 0.96 pol,1,128x64 I2C 0x3C 3.3V,N1,LCD 16x2 I2C
+LED1,Sinalizacao,Anel WS2812B 12 LEDs,1,5V RMT DIN GPIO38 via 330R + cap bulk 470uF/10V,N1,NeoPixel Stick
+BZ1_Q2,Alarme Audio,Buzzer Passivo 5V + 2N2222,1,Base 1k / PD 10k / R_paralelo 1k via LEDC GPIO39,N1,Buzzer passivo + BC547
+SW1,Fim de Curso,Microswitch Alavanca,2,LIMIT_OPEN (GPIO17) / LIMIT_CLOSE (GPIO18) + RC 10k/1k/100nF,N1,Opto TCRT5000 / Hall KY-024
+PASSIVOS,Divisores & Filtros,Kit SMD 0805 1% + X7R + LowESR,1,R(100,330,470,1k,1.2k,2.2k,4.7k,10k,22k,30k,39k,52.3k,100k) BAT54S 470uF,N1,Res/Caps equivalentes
+CONN,Conectores & Chicote,JST-XH/VH + Borne 5.08 + PG7 + USB-C,1,JST-XH 2P/4P/6P/10P + JST-VH 2P + ESD USBLC6-2SC6 + termo glue,N1,Conectores KF301 / Molex KK
+EXPS,Kits Expansao A-D,ESP32-CAM / ESP32-C3 / PCA9685+HX711,1,OV2640 UART1(40/41), C3+MPU6050 BLE, Servo 2-DOF/Stewart, HX711/NTC,N3,Componentes modulares labs 01-12
+U13_BAR1,Expansao Digital Xplora3D,74HC595 DIP-16 + LED Bar 10-Segmentos,1,Registrador 8-bit SIPO (SER/SRCLK/RCLK) acionando barra grafica 10 LEDs (Z13/Z18/Z19),N2,SN74HC595N + Kingbright DC-10EWA
+DISP2_DISP3,Cockpit Multi-Display,LCD 16x2 I2C (0x27) + TM1637 4-Digitos,1,LCD PCF8574 I2C compartilhado com OLED + TM1637 CLK/DIO para distancia Kalman mm,N2,LCD 20x4 I2C + MAX7219
+SENS_X3D,Sensores Bancada 5-Protoboards,DHT11 + TMP36 + NTC 10k B3950 + TCRT5000 + FSR 402 + LDR,1,Psicrometria bulbo seco/umido + sensor linha IR + carga FSR 402 + 2FA optico,N2,DHT22 + QRE1113
+RLY1_FSM,Interlock & Semaforo,Modulo Rele SPDT 1-Ch 5V + Semaforo 3 LEDs (G/Y/R) + 3x 220R,1,Rele fail-secure paralelo ao MOSFET IRLZ44N + semaforo FSM O(1) (Z20),N2,Rele estado solido G3MB-202P
+BB_KIT,Bancada 3D 5-Protoboards,2x Protoboard 400 pts + 3x Mini Protoboard 170 pts (1110 furos),1,Layout modular 7 zonas alinhado ao barramento 32 pinos com jumpers Pre-Cut,N1,Protoboard 830 pts + 2x 400 pts

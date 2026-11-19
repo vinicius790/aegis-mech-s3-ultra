@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "author": "AEGIS-MECH v3.0 (Z16 + Z03 + Z12 Corrigido em Arduino Mega 2560 - FSM S1<->S2 Bidirecional Completa)",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "s1",
+      "top": -120,
+      "left": 140,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "s2",
+      "top": -120,
+      "left": 300,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 80,
+      "left": 140,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "mega:22",
+      "s1:TRIG",
+      "green",
+      []
+    ],
+    [
+      "mega:24",
+      "s2:TRIG",
+      "blue",
+      []
+    ]
+  ]
+}
